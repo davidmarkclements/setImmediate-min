@@ -1,0 +1,22 @@
+{
+  "name": "setImmediate-min",
+  "version": "1.0.0",
+  "description": "setImmediate polyfill for when you value code size over speed of async execution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/davidmarkclements/setImmediate-min"
+  },
+  "keywords": [
+    "setImmediate"
+  ],
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidmarkclements/setImmediate-min/issues"
+  },
+  "homepage": "https://github.com/davidmarkclements/setImmediate-min"
+}
