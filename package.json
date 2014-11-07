@@ -1,5 +1,5 @@
 {
-  "name": "setImmediate-min",
+  "name": "setimmediate-min",
   "version": "1.0.0",
   "description": "setImmediate polyfill for when you value code size over speed of async execution",
   "main": "index.js",

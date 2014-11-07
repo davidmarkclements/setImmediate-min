@@ -3,21 +3,31 @@
 setImmediate polyfill for when you value code size over speed of async execution
 
 For use with old versions of Node and Browsers not
-supporting setImmediate. Package for browsers using
+supporting `setImmediate`. Package for browsers using
 browserify.
+
+```sh
+npm install setimmediate-min --save
+```
+
+```javascript
+require('setimmediate-min')() 
+```
+
+## About
 
 `setImmediate` is a "controversial" API.
 
-Reasons for this are unclear to me,
+Reasons for this are not entirely clear to me,
 but from what I gather
 
 * WebKit have been reluctant to implement (for like.. 3-4 years now)
-  * Reason seems to be they felt setTimeout was "good enough" .. because "clamping"
-  * But clamping was/is broken, so setTimeout is a  
-    significantly slower than setImmediate
+  * Reason seems to be they felt `setTimeout` was "good enough" .. because "clamping"
+  * But clamping was/is broken, so `setTimeout` is a  
+    significantly slower than `setImmediate`
 * Because WebKit team haven't implemented, Firefox have
   followed their lead
-* Thus, we only have setImmediate in IE and Node at the moment. 
+* Thus, we only have `setImmediate` in IE and Node at the moment. 
 
 There are some excellent polyfills that piggy back
 on whatever native asynchronous API is fastest for
